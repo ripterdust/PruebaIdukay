@@ -1,6 +1,6 @@
-export type CalculateOperatingTime = (
+export type CalculateMatter = (
     firstRocket: number | null,
     secondRocket: number | null,
     thirdRocket: number | null,
     cPercentage: number | null
-) => number | null
+) => string
