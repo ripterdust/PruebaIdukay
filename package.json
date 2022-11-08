@@ -8,7 +8,7 @@
         "test:init": "jest --init",
         "dev": "nodemon src/index.ts",
         "start:all": "nodemon src/all.ts",
-        "start:coverage": "serve "
+        "start:coverage": "serve coverage/lcov-report/"
     },
     "author": "",
     "license": "ISC",
