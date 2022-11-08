@@ -9,13 +9,23 @@ export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSp
         return extraSpeed
     }
 
-    const timeOfRocketActivity: Rockets = {
-        first: 0,
-        second: 0,
-        third: 0,
-    }
-    // @ts-ignore
-    const { first, second, third } = fuel
+    const TOTALPOWER = 100
+    let average = 0
+    let overpowerRockets = 0
 
-    return 0
+    Object.keys(damage).map((key) => {
+        // @ts-ignore
+        const capacity = 100 - damage[key]
+        // @ts-ignore
+        const extaPower = fuel[key] - capacity
+
+        if (extaPower > 0) {
+            average += extaPower
+            overpowerRockets += 1
+        }
+    })
+
+    const avgOverPower = average / overpowerRockets
+
+    return TOTALPOWER - avgOverPower
 }
