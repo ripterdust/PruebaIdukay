@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1667860540417" clover="3.2.0">
-  <project timestamp="1667860540418" name="All files">
-    <metrics statements="35" coveredstatements="35" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3" elements="50" coveredelements="50" complexity="0" loc="35" ncloc="35" packages="2" files="4" classes="4"/>
+<coverage generated="1667918945918" clover="3.2.0">
+  <project timestamp="1667918945918" name="All files">
+    <metrics statements="43" coveredstatements="43" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3" elements="58" coveredelements="58" complexity="0" loc="43" ncloc="43" packages="2" files="4" classes="4"/>
     <package name="misc">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="responses.response.ts" path="/home/ripterdust/repos/idukay/src/misc/responses.response.ts">
@@ -12,9 +12,9 @@
       </file>
     </package>
     <package name="utils">
-      <metrics statements="32" coveredstatements="32" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+      <metrics statements="40" coveredstatements="40" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
       <file name="calculateMatter.util.ts" path="/home/ripterdust/repos/idukay/src/utils/calculateMatter.util.ts">
-        <metrics statements="13" coveredstatements="13" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <metrics statements="21" coveredstatements="21" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -28,6 +28,14 @@
         <line num="11" count="9" type="cond" truecount="1" falsecount="0"/>
         <line num="12" count="5" type="cond" truecount="1" falsecount="0"/>
         <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
       </file>
       <file name="calculateOperatingTime.util.ts" path="/home/ripterdust/repos/idukay/src/utils/calculateOperatingTime.util.ts">
         <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>

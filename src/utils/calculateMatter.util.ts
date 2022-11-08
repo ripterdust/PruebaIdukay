@@ -2,12 +2,20 @@ import { noCompile } from '../misc/responses.response'
 import { transformResponse } from './transform.util'
 
 export const calculateMatter = (
-    firstRocket: number,
-    secondRocket: number,
-    thirdRocket: number,
+    damageFirstRocket: number,
+    damageSecondRocket: number,
+    damageThirdRocket: number,
     cPercentage: number
 ): string => {
-    if (firstRocket == 0 && secondRocket == 0 && thirdRocket == 0)
+    if (damageFirstRocket == 0 && damageSecondRocket == 0 && damageThirdRocket == 0)
         return transformResponse(cPercentage, cPercentage, cPercentage)
+
+    const capacity = {
+        first: 100 - damageFirstRocket,
+        second: 100 - damageSecondRocket,
+        third: 100 - damageThirdRocket,
+    }
+
+    console.log(capacity)
     return noCompile
 }
