@@ -4,10 +4,6 @@ describe('Operating time - invalidation tests', () => {
     test('Returns infinity if ther is not able to complile ', () => {
         expect(calculateOperatingTime(20, 50, 40, 170)).toBe(0)
     })
-
-    test('Returns null if there is invalid params', () => {
-        expect(calculateOperatingTime(null, null, null, null)).toBe(null)
-    })
 })
 
 describe('Operating time - infinity cases', () => {
