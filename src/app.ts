@@ -1,6 +1,6 @@
-import { calculateMatter } from './utils/calculateMatter.util'
-import { calculateOperatingTime } from './utils/calculateOperatingTime.util'
-import { getDataFromResponse } from './utils/transform.util'
+import { calculateMatter } from './common/utils/calculateMatter.util'
+import { calculateOperatingTime } from './common/utils/calculateOperatingTime.util'
+import { getDataFromResponse } from './common/utils/transform.util'
 
 export const results = (firstRocket: number, secondRocket: number, thirdRocket: number, cSpeed: number) => {
     const fuelNecesary = calculateMatter(firstRocket, secondRocket, thirdRocket, cSpeed)

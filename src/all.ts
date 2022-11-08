@@ -1,6 +1,7 @@
 import { results } from './app'
-import { AllCases } from './interfaces/allInfo'
-import { Rockets } from './interfaces/rocket.interface'
+import { AllCases } from './common/interfaces/allInfo'
+import {} from './common/interfaces//rocket.interface'
+
 const useCases: AllCases[] = [
     { first: 0, second: 0, third: 0, cSpeed: 100 },
     { first: 0, second: 0, third: 0, cSpeed: 90 },

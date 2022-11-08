@@ -1,6 +1,6 @@
 import { noCompile } from '../misc/responses.response'
 import { CalculateOperatingTime } from '../types/calculateOperatingTime.type'
-import { Rockets } from '../interfaces/rocket.interface'
+
 export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSpeed) => {
     if (fuel == noCompile) return 0
     if (damage.first === 0 && damage.second === 0 && damage.third === 0) {

@@ -1,6 +1,5 @@
-import { Rockets } from '../interfaces/rocket.interface'
 import { fuelRepsonse, noCompile } from '../misc/responses.response'
-
+import { Rockets } from '../interfaces/rocket.interface'
 export const transformResponse = (firstRocket: number, secondRocket: number, thirdRocket: number) =>
     fuelRepsonse
         .replace('__aRocket__', `${firstRocket}`)

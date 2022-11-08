@@ -1,4 +1,4 @@
-import { calculateOperatingTime } from '../utils/calculateOperatingTime.util'
+import { calculateOperatingTime } from '../common/utils/calculateOperatingTime.util'
 
 describe('Operating time - invalidation tests', () => {
     test('Returns infinity if ther is not able to complile ', () => {

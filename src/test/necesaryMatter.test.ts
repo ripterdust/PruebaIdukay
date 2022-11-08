@@ -1,5 +1,5 @@
-import { noCompile } from '../misc/responses.response'
-import { calculateMatter } from '../utils/calculateMatter.util'
+import { noCompile } from '../common/misc/responses.response'
+import { calculateMatter } from '../common/utils/calculateMatter.util'
 
 describe('Necesary matter - Invalidation cases', () => {
     test('To much damage', () => {
