@@ -2,7 +2,18 @@ import { calculateOperatingTime } from '../utils/calculateOperatingTime.util'
 
 describe('Operating time - invalidation tests', () => {
     test('Returns infinity if ther is not able to complile ', () => {
-        expect(calculateOperatingTime(20, 50, 40, 170)).toBe(0)
+        expect(
+            calculateOperatingTime(
+                {
+                    first: 20,
+                    second: 50,
+                    third: 40,
+                },
+                    'Unable to comply'
+                
+                170
+            )
+        ).toBe(0)
     })
 })
 
