@@ -9,8 +9,7 @@ describe('Operating time - invalidation tests', () => {
                     second: 50,
                     third: 40,
                 },
-                    'Unable to comply'
-                
+                'Unable to comply',
                 170
             )
         ).toBe(0)
@@ -19,7 +18,7 @@ describe('Operating time - invalidation tests', () => {
 
 describe('Operating time - infinity cases', () => {
     test('First case', () => {
-        expect(calculateOperatingTime(0, 0, 0, 100)).toBe(Infinity)
+        expect(calculateOperatingTime({0,0,0},{}, 100)).toBe(Infinity)
     })
     test('Second case', () => {
         expect(calculateOperatingTime(0, 0, 0, 90)).toBe(Infinity)

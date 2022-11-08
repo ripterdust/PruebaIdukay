@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1667929011674" clover="3.2.0">
-  <project timestamp="1667929011674" name="All files">
-    <metrics statements="96" coveredstatements="90" conditionals="11" coveredconditionals="11" methods="4" coveredmethods="3" elements="111" coveredelements="104" complexity="0" loc="96" ncloc="96" packages="2" files="4" classes="4"/>
+<coverage generated="1667931858037" clover="3.2.0">
+  <project timestamp="1667931858037" name="All files">
+    <metrics statements="119" coveredstatements="90" conditionals="11" coveredconditionals="11" methods="4" coveredmethods="3" elements="134" coveredelements="104" complexity="0" loc="119" ncloc="119" packages="2" files="4" classes="4"/>
     <package name="misc">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="responses.response.ts" path="/home/ripterdust/repos/idukay/src/misc/responses.response.ts">
@@ -12,7 +12,7 @@
       </file>
     </package>
     <package name="utils">
-      <metrics statements="93" coveredstatements="87" conditionals="11" coveredconditionals="11" methods="4" coveredmethods="3"/>
+      <metrics statements="116" coveredstatements="87" conditionals="11" coveredconditionals="11" methods="4" coveredmethods="3"/>
       <file name="calcNecesaryPower.ts" path="/home/ripterdust/repos/idukay/src/utils/calcNecesaryPower.ts">
         <metrics statements="39" coveredstatements="39" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -97,7 +97,7 @@
         <line num="38" count="4" type="stmt"/>
       </file>
       <file name="transform.util.ts" path="/home/ripterdust/repos/idukay/src/utils/transform.util.ts">
-        <metrics statements="16" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <metrics statements="39" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -114,6 +114,29 @@
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
       </file>
     </package>
   </project>

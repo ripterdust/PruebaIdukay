@@ -11,7 +11,7 @@ export const results = (firstRocket: number, secondRocket: number, thirdRocket: 
         second: secondRocket,
         third: thirdRocket,
     }
-    const operatingTime = calculateOperatingTime(fuel, damage, cSpeed)
+    const operatingTime = calculateOperatingTime(damage, fuel, cSpeed)
 
     console.table({
         'Fuel needed': fuelNecesary,

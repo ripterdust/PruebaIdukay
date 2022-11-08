@@ -1,5 +1,8 @@
-import { Rockets } from '../interfaces/rocket.interface'
+import { noCompile } from '../misc/responses.response'
 import { CalculateOperatingTime } from '../types/calculateOperatingTime.type'
 export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSpeed) => {
+    if (fuel == noCompile) return 0
+
+    console.log(fuel)
     return 0
 }
