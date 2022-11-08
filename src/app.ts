@@ -15,6 +15,6 @@ export const results = (firstRocket: number, secondRocket: number, thirdRocket: 
 
     console.table({
         'Fuel needed': fuelNecesary,
-        'Operating time': operatingTime,
+        'Operating time': operatingTime === Infinity ? operatingTime : `${operatingTime} minutes`,
     })
 }
