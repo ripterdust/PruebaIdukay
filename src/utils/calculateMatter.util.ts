@@ -1,6 +1,17 @@
 import { noCompile } from '../misc/responses.response'
 import { transformResponse } from './transform.util'
 
+/**==============================================
+ **              calculateMatter
+ *?  This function calculates the necesarry matter to
+ *?  Startup the spaceship
+ *@param damageFirstRocket number
+ *@param damageSecondRocket number
+ *@param damageThirdRocket number
+ *@param cPercentage number
+ *@return string
+ *=============================================**/
+
 export const calculateMatter = (
     damageFirstRocket: number,
     damageSecondRocket: number,
@@ -16,6 +27,7 @@ export const calculateMatter = (
         third: 100 - damageThirdRocket,
     }
 
-    console.log(capacity)
+    const totalFuelRequired = cPercentage * 3
+
     return noCompile
 }
