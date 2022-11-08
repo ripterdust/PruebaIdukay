@@ -1,5 +1,5 @@
 export interface Rockets {
-    firstRocket: number | null
-    secondRocket: number | null
-    thirdRocket: number | null
+    first: number
+    second: number
+    third: number
 }
