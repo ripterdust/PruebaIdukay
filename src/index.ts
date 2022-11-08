@@ -1,3 +1,3 @@
 import { results } from './app'
 
-results(0, 0, 100, 80)
+results(0, 0, 0, 30)

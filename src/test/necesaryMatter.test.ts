@@ -17,7 +17,7 @@ describe('Weight cases', () => {
     })
 
     test('Third case', () => {
-        expect(calculateMatter(0, 0, 0, 80)).toBe('A: 30 mg/s, B: 30 mg/s, C: 30 mg/s')
+        expect(calculateMatter(0, 0, 0, 30)).toBe('A: 30 mg/s, B: 30 mg/s, C: 30 mg/s')
     })
 
     test('Fourth case', () => {

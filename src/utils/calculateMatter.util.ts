@@ -20,14 +20,6 @@ export const calculateMatter = (
     damageThirdRocket: number,
     cPercentage: number
 ): string => {
-    if (
-        damageFirstRocket === null ||
-        damageFirstRocket === null ||
-        damageThirdRocket === null ||
-        cPercentage === null
-    )
-        return noCompile
-
     if (damageFirstRocket == 0 && damageSecondRocket == 0 && damageThirdRocket == 0)
         return transformResponse(cPercentage, cPercentage, cPercentage)
 
