@@ -6,7 +6,8 @@
     "scripts": {
         "test": "jest --watchAll",
         "test:init": "jest --init",
-        "dev": "nodemon src/index.ts"
+        "dev": "nodemon src/index.ts",
+        "start:all": "nodemon src/all.ts"
     },
     "author": "",
     "license": "ISC",
