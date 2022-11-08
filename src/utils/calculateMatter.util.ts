@@ -42,6 +42,5 @@ export const calculateMatter = (
     const missingPower = totalFuelRequired - totalPower
 
     const response = calcNecesaryPower(actualCapacity, missingPower)
-    console.log(response)
     return response
 }
