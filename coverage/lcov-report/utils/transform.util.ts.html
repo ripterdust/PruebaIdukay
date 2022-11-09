@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">23.68% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/38</span>
+                <span class='fraction'>38/38</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">75% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">23.68% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/38</span>
+                <span class='fraction'>38/38</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -110,35 +110,35 @@
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { fuelRepsonse, noCompile } from '../misc/responses.response'
 import { Rockets } from '../interfaces/rocket.interface'
 export const transformResponse = (firstRocket: number, secondRocket: number, thirdRocket: number) =&gt;
@@ -147,36 +147,36 @@ export const transformResponse = (firstRocket: number, secondRocket: number, thi
         .replace('__bRocket__', `${secondRocket}`)
         .replace('__cRocket__', `${thirdRocket}`)
 &nbsp;
-export const getDataFromResponse = (<span class="fstat-no" title="function not covered" >response: string): Rockets | string =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    if (response == noCompile) return response</span>
-<span class="cstat-no" title="statement not covered" >    const indexes = {</span>
-<span class="cstat-no" title="statement not covered" >        1: 'first',</span>
-<span class="cstat-no" title="statement not covered" >        2: 'second',</span>
-<span class="cstat-no" title="statement not covered" >        3: 'third',</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    const rockets: Rockets = {</span>
-<span class="cstat-no" title="statement not covered" >        first: 0,</span>
-<span class="cstat-no" title="statement not covered" >        second: 0,</span>
-<span class="cstat-no" title="statement not covered" >        third: 0,</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >    response</span>
-<span class="cstat-no" title="statement not covered" >        // @ts-ignore</span>
-<span class="cstat-no" title="statement not covered" >        .replaceAll('mg/s', '')</span>
-<span class="cstat-no" title="statement not covered" >        .replaceAll(' ', '')</span>
-<span class="cstat-no" title="statement not covered" >        .replace('A:', '')</span>
-<span class="cstat-no" title="statement not covered" >        .replace('B:', '')</span>
-<span class="cstat-no" title="statement not covered" >        .replace('C:', '')</span>
-<span class="cstat-no" title="statement not covered" >        .split(',')</span>
-<span class="cstat-no" title="statement not covered" >        .map((number: string, index: number) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >            // @ts-ignore</span>
-<span class="cstat-no" title="statement not covered" >            const key = indexes[index + 1]</span>
-<span class="cstat-no" title="statement not covered" >            // @ts-ignore</span>
-<span class="cstat-no" title="statement not covered" >            rockets[key] = parseInt(number)</span>
-<span class="cstat-no" title="statement not covered" >        })</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    return rockets</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+export const getDataFromResponse = (response: string): Rockets | string =&gt; {
+    if (response == noCompile) <span class="branch-0 cbranch-no" title="branch not covered" >return response</span>
+    const indexes = {
+        1: 'first',
+        2: 'second',
+        3: 'third',
+    }
+&nbsp;
+    const rockets: Rockets = {
+        first: 0,
+        second: 0,
+        third: 0,
+    }
+    response
+        // @ts-ignore
+        .replaceAll('mg/s', '')
+        .replaceAll(' ', '')
+        .replace('A:', '')
+        .replace('B:', '')
+        .replace('C:', '')
+        .split(',')
+        .map((number: string, index: number) =&gt; {
+            // @ts-ignore
+            const key = indexes[index + 1]
+            // @ts-ignore
+            rockets[key] = parseInt(number)
+        })
+    console.log(rockets)
+    return rockets
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -184,7 +184,7 @@ export const getDataFromResponse = (<span class="fstat-no" title="function not c
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-11-08T21:46:17.048Z
+                at 2022-11-09T13:35:43.548Z
             </div>
         <script src="../prettify.js"></script>
         <script>
