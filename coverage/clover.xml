@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668007544509" clover="3.2.0">
-  <project timestamp="1668007544509" name="All files">
+<coverage generated="1668011601555" clover="3.2.0">
+  <project timestamp="1668011601555" name="All files">
     <metrics statements="216" coveredstatements="216" conditionals="38" coveredconditionals="36" methods="6" coveredmethods="6" elements="260" coveredelements="258" complexity="0" loc="216" ncloc="216" packages="2" files="6" classes="6"/>
     <package name="misc">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -13,7 +13,7 @@
     </package>
     <package name="utils">
       <metrics statements="213" coveredstatements="213" conditionals="38" coveredconditionals="36" methods="6" coveredmethods="6"/>
-      <file name="calcMaxTime.util.ts" path="/home/ripterdust/repos/idukay/src/common/utils/calcMaxTime.util.ts">
+      <file name="calcMaxSpeed.util.ts" path="/home/ripterdust/repos/idukay/src/common/utils/calcMaxSpeed.util.ts">
         <metrics statements="49" coveredstatements="49" conditionals="13" coveredconditionals="12" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

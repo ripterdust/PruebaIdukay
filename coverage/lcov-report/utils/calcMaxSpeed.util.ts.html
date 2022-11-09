@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for utils/calcNecesaryPower.ts</title>
+    <title>Code coverage report for utils/calcMaxSpeed.util.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">utils</a> calcNecesaryPower.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">utils</a> calcMaxSpeed.util.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>48/48</span>
+                <span class='fraction'>49/49</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">92.3% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>12/13</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>48/48</span>
+                <span class='fraction'>49/49</span>
             </div>
         
             
@@ -111,7 +111,8 @@
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
 <a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -125,87 +126,89 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Rockets } from '../interfaces/rocket.interface'
-import { noCompile } from '../misc/responses.response'
-import { transformResponse } from './transform.util'
 &nbsp;
 /**==============================================
- **              calcNecesaryPower
- *?  This function calculates what is the necessary power
- *?  for the rocket to travel at the required speed
- *@param rocket Rockets
- *@param missingPower number
- *@return string | number
+ **              calculateMaxSpeed
+ *?  This function calculates what speed the rocket
+ *?  needs to traven indefinitely
+ *
+ *@param frist number
+ *@param second number
+ *@param third number
+ *@return number
  *=============================================**/
 &nbsp;
-export const calcNecesaryPower = (rockets: Rockets, missingPower: number) =&gt; {
-    let power: Rockets = {
-        first: 0,
-        second: 0,
-        third: 0,
+export const calculateMaxSpeed = (first: number, second: number, third: number): number =&gt; {
+    const totalLightSpeed: number = 100
+&nbsp;
+    if (first === 0 &amp;&amp; second === 0 &amp;&amp; third === 0) {
+        return totalLightSpeed
     }
 &nbsp;
-    let rocketsAvailable = 0
+    if (first &lt; 100 &amp;&amp; second &lt; 100 &amp;&amp; third &lt; 100) {
+        const mostDamagedRocket: number = Math.max(first, second, third)
+        return totalLightSpeed - mostDamagedRocket
+    }
 &nbsp;
-    const functionalRockets: string[] = []
-&nbsp;
-    Object.keys(rockets).map((key) =&gt; {
+    const rockets: Rockets = {
+        first,
+        second,
+        third,
+    }
+    let fulllyDamagedRockets: number = 0
+    let availableRockets: number[] = []
+    const maxDamage = 100
+    Object.keys(rockets).map((key: string) =&gt; {
         // @ts-ignore
-        const rocket = rockets[key]
-        if (rocket &gt; 0) {
-            functionalRockets.push(key)
-            rocketsAvailable += 1
-        }
+        const damage: number = rockets[key]
 &nbsp;
+        if (damage === maxDamage) return (fulllyDamagedRockets += 1)
+&nbsp;
+        availableRockets.push(damage)
         return null
     })
 &nbsp;
-    const powerRequiredByRockett = missingPower / rocketsAvailable
-&nbsp;
-    if (rocketsAvailable === 0 || powerRequiredByRockett &gt; 99) return noCompile
-&nbsp;
-    functionalRockets.map((rocket) =&gt; {
-        // @ts-ignore
-        const powerAvailable = rockets[rocket]
-        // @ts-ignore
-        power[rocket] = powerAvailable + powerRequiredByRockett
-    })
-&nbsp;
-    return transformResponse(power.first, power.second, power.third)
+    // @ts-ignore
+    const maxSpeed: number = parseFloat(totalLightSpeed / 3).toFixed(2) * (3 - fulllyDamagedRockets)
+    const maxDamagedRocket = availableRockets.reduce((acc, val) =&gt; (acc &gt; val<span class="branch-0 cbranch-no" title="branch not covered" > ? acc </span>: val))
+    const maxPercentage = (maxSpeed / 100) * (100 - maxDamagedRocket)
+    return maxPercentage
 }
 &nbsp;</pre></td></tr></table></pre>
 

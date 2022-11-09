@@ -1,7 +1,7 @@
 import { Rockets } from '../interfaces/rocket.interface'
 
 /**==============================================
- **              calcMaxTime
+ **              calculateMaxSpeed
  *?  This function calculates what speed the rocket
  *?  needs to traven indefinitely
  *
@@ -11,7 +11,7 @@ import { Rockets } from '../interfaces/rocket.interface'
  *@return number
  *=============================================**/
 
-export const calcMaxTime = (first: number, second: number, third: number): number => {
+export const calculateMaxSpeed = (first: number, second: number, third: number): number => {
     const totalLightSpeed: number = 100
 
     if (first === 0 && second === 0 && third === 0) {
