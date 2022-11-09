@@ -2,6 +2,15 @@ import { Rockets } from '../interfaces/rocket.interface'
 import { noCompile } from '../misc/responses.response'
 import { transformResponse } from './transform.util'
 
+/**==============================================
+ **              calcNecesaryPower
+ *?  This function calculates what is the necessary power
+ *?  for the rocket to travel at the required speed
+ *@param rocket Rockets
+ *@param missingPower number
+ *@return string | number
+ *=============================================**/
+
 export const calcNecesaryPower = (rockets: Rockets, missingPower: number) => {
     let power: Rockets = {
         first: 0,

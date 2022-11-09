@@ -1,5 +1,16 @@
 import { Rockets } from '../interfaces/rocket.interface'
 
+/**==============================================
+ **              calcMaxTime
+ *?  This function calculates what speed the rocket
+ *?  needs to traven indefinitely
+ *
+ *@param frist number
+ *@param second number
+ *@param third number
+ *@return number
+ *=============================================**/
+
 export const calcMaxTime = (first: number, second: number, third: number): number => {
     if (first === 0 && second === 0 && third === 0) {
         return Infinity

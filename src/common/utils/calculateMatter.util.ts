@@ -6,6 +6,7 @@ import { transformResponse } from './transform.util'
  **              calculateMatter
  *?  This function calculates the necesarry matter to
  *?  Startup the spaceship
+ *
  *@param damageFirstRocket number
  *@param damageSecondRocket number
  *@param damageThirdRocket number
