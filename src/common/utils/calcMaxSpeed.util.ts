@@ -1,4 +1,5 @@
 import { Rockets } from '../interfaces/rocket.interface'
+import { getMaxNumFromArray } from './get.util'
 
 /**==============================================
  **              calculateMaxSpeed
@@ -43,7 +44,7 @@ export const calculateMaxSpeed = (first: number, second: number, third: number):
 
     // @ts-ignore
     const maxSpeed: number = parseFloat(totalLightSpeed / 3).toFixed(2) * (3 - fulllyDamagedRockets)
-    const maxDamagedRocket = availableRockets.reduce((acc, val) => (acc > val ? acc : val))
+    const maxDamagedRocket = getMaxNumFromArray(availableRockets)
     const maxPercentage = (maxSpeed / 100) * (100 - maxDamagedRocket)
     return maxPercentage
 }
