@@ -33,6 +33,5 @@ export const getDataFromResponse = (response: string): Rockets | string => {
             // @ts-ignore
             rockets[key] = parseInt(number)
         })
-    console.log(rockets)
     return rockets
 }
