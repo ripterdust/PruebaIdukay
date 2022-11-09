@@ -30,13 +30,14 @@ export const calcMaxTime = (first: number, second: number, third: number): numbe
     }
     let fulllyDamagedRockets: number = 0
     let availableRockets: number[] = []
+    const maxDamage = 100
     Object.keys(rockets).map((key: string) => {
         // @ts-ignore
-        const rocket: number = rockets[key]
+        const damage: number = rockets[key]
 
-        if (rocket === 100) return (fulllyDamagedRockets += 1)
+        if (damage === maxDamage) return (fulllyDamagedRockets += 1)
 
-        availableRockets.push(rocket)
+        availableRockets.push(damage)
         return null
     })
 
