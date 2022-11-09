@@ -1,5 +1,5 @@
 import { noCompile } from '../common/misc/responses.response'
-import { getMaxNumFromArray } from '../common/utils/get.util'
+import { getMaxNumFromArray, getMaxPercentage } from '../common/utils/get.util'
 import { getDataFromResponse } from '../common/utils/transform.util'
 
 describe('THis tests show the returning of data', () => {
@@ -27,5 +27,15 @@ describe('Get the max number', () => {
 
     test('Returns 0 cuz ther is the only one number', () => {
         expect(getMaxNumFromArray([0])).toBe(0)
+    })
+})
+
+describe('', () => {
+    test('Returns the max speed by damage', () => {
+        expect(getMaxPercentage(100, 10)).toBe(90)
+    })
+
+    test('Returns max speed withoud damage', () => {
+        expect(getMaxPercentage(100, 0)).toBe(100)
     })
 })
