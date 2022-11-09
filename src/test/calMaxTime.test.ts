@@ -2,7 +2,7 @@ import { calcMaxTime } from '../common/utils/calcMaxTime.util'
 
 describe('This test the maxVelocity function', () => {
     test('This should return the max velocity when the rocket havent damage', () => {
-        expect(calcMaxTime(0, 0, 0)).toBe(Infinity)
+        expect(calcMaxTime(0, 0, 0)).toBe(100)
     })
 
     test('Slow case', () => {

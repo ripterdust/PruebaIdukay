@@ -39,7 +39,7 @@ $ npm install
 -   Si se desea ver la aplicación con el primer caso de uso se debe de correr el comando
 
 ```
-$ npm start
+$ npm run dev
 ```
 
 -   Si se desea correr el app con todos los casos de uso ya prescritos en la prueba correr
