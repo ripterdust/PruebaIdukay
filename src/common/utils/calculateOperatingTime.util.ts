@@ -25,7 +25,7 @@ export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSp
 
     Object.keys(damage).map((key) => {
         // @ts-ignore
-        const capacity = 100 - damage[key]
+        const capacity = TOTALPOWER - damage[key]
         // @ts-ignore
         const extaPower = fuel[key] - capacity
 
