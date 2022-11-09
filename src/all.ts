@@ -13,5 +13,6 @@ const useCases: AllCases[] = [
     { first: 20, second: 50, third: 40, cSpeed: 170 },
 ]
 
-const selectedCase = useCases[3]
-results(selectedCase.first, selectedCase.second, selectedCase.third, selectedCase.cSpeed)
+useCases.map((rocketState: AllCases) => {
+    results(rocketState.first, rocketState.second, rocketState.third, rocketState.cSpeed)
+})
