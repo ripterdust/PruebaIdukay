@@ -45,6 +45,6 @@ export const calculateMaxSpeed = (first: number, second: number, third: number):
     // @ts-ignore
     const maxSpeed: number = parseFloat(totalLightSpeed / 3).toFixed(2) * (3 - fulllyDamagedRockets)
     const maxDamagedRocket = getMaxNumFromArray(availableRockets)
-    const maxPercentage = getMaxPercentage(maxSpeed, maxDamagedRocket)
+    const maxPercentage: number = getMaxPercentage(maxSpeed, maxDamagedRocket)
     return maxPercentage
 }
