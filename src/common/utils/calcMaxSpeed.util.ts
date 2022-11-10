@@ -29,6 +29,7 @@ export const calculateMaxSpeed = (first: number, second: number, third: number):
         second,
         third,
     }
+
     let fulllyDamagedRockets: number = 0
     let availableRockets: number[] = []
     const maxDamage = 100
@@ -39,6 +40,7 @@ export const calculateMaxSpeed = (first: number, second: number, third: number):
         if (damage === maxDamage) return (fulllyDamagedRockets += 1)
 
         availableRockets.push(damage)
+
         return null
     })
 
