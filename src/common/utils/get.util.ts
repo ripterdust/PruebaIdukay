@@ -3,5 +3,7 @@ export const getMaxNumFromArray = (array: number[]) => {
 }
 
 export const getMaxPercentage = (maxSpeed: number, maxDamaged: number): number => {
-    return (maxSpeed / 100) * (100 - maxDamaged)
+    const lightSpeed = 100
+    const maximumRocketCapacity = 100
+    return (maxSpeed / lightSpeed) * (maximumRocketCapacity - maxDamaged)
 }
