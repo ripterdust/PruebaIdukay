@@ -1,5 +1,5 @@
 import { Rockets } from '../interfaces/rocket.interface'
-import { calcNecesaryPower } from './calcNecesaryPower'
+import { calcNecesaryPower } from './calculateNecesaryPower'
 import { transformResponse } from './transform.util'
 
 /**==============================================

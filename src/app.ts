@@ -1,5 +1,5 @@
 import { Rockets } from './common/interfaces/rocket.interface'
-import { calculateMaxSpeed } from './common/utils/calcMaxSpeed.util'
+import { calculateMaxSpeed } from './common/utils/calculateMaxSpeed.util'
 import { calculateMatter } from './common/utils/calculateMatter.util'
 import { calculateOperatingTime } from './common/utils/calculateOperatingTime.util'
 import { getDataFromResponse } from './common/utils/transform.util'

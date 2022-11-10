@@ -1,4 +1,4 @@
-import { calculateMaxSpeed } from '../common/utils/calcMaxSpeed.util'
+import { calculateMaxSpeed } from '../common/utils/calculateMaxSpeed.util'
 
 describe('This test the maxVelocity function', () => {
     test('This should return the max velocity when the rocket havent damage', () => {

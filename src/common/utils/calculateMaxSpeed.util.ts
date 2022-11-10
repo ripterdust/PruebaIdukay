@@ -15,9 +15,7 @@ import { getMaxNumFromArray, getMaxPercentage } from './get.util'
 export const calculateMaxSpeed = (first: number, second: number, third: number): number => {
     const totalLightSpeed: number = 100
 
-    if (first === 0 && second === 0 && third === 0) {
-        return totalLightSpeed
-    }
+    if (first === 0 && second === 0 && third === 0) return totalLightSpeed
 
     if (first < 100 && second < 100 && third < 100) {
         const mostDamagedRocket: number = Math.max(first, second, third)
