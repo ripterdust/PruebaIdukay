@@ -31,7 +31,7 @@ describe('Get the max number', () => {
     })
 })
 
-describe('', () => {
+describe('Returns 90', () => {
     test('Returns the max speed by damage', () => {
         expect(getMaxPercentage(100, 10)).toBe(90)
     })
