@@ -7,7 +7,9 @@ describe('Operating time - invalidation tests', () => {
             second: 50,
             third: 40,
         }
-        expect(calculateOperatingTime(damageInRockets, 'Unable to comply', 170)).toBe(0)
+
+        const fuelInRockets = 'Unable to comply'
+        expect(calculateOperatingTime(damageInRockets, fuelInRockets, 170)).toBe(0)
     })
 })
 
