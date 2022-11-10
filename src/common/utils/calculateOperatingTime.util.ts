@@ -1,4 +1,3 @@
-import { noCompile } from '../misc/responses.response'
 import { CalculateOperatingTime } from '../types/calculateOperatingTime.type'
 
 /**==============================================
@@ -12,7 +11,10 @@ import { CalculateOperatingTime } from '../types/calculateOperatingTime.type'
  *=============================================**/
 
 export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSpeed) => {
-    if (fuel == noCompile) return 0
+    if (typeof fuel === 'string') {
+        return 0
+    }
+
     if (damage.first === 0 && damage.second === 0 && damage.third === 0) {
         if (cSpeed <= 100) return Infinity
         const extraSpeed = cSpeed - 100
@@ -25,7 +27,7 @@ export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSp
 
     Object.keys(damage).map((key) => {
         const capacity = TOTALPOWER - damage[key]
-        // @ts-ignore
+
         const extaPower = fuel[key] - capacity
 
         if (extaPower > 0) {

@@ -18,7 +18,7 @@ import { getDataFromResponse } from './common/utils/transform.util'
 export const results = (firstRocket: number, secondRocket: number, thirdRocket: number, cSpeed: number) => {
     const fuelNecesary = calculateMatter(firstRocket, secondRocket, thirdRocket, cSpeed)
 
-    const fuelByRocket = getDataFromResponse(fuelNecesary)
+    const fuelByRocket: Rockets | string = getDataFromResponse(fuelNecesary)
 
     const damage: Rockets = {
         first: firstRocket,
