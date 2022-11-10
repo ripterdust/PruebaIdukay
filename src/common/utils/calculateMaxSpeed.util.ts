@@ -32,7 +32,6 @@ export const calculateMaxSpeed = (first: number, second: number, third: number):
     let availableRockets: number[] = []
     const maxDamage = 100
     Object.keys(rockets).map((key: string) => {
-        // @ts-ignore
         const damage: number = rockets[key]
 
         if (damage === maxDamage) return (fulllyDamagedRockets += 1)
@@ -42,8 +41,11 @@ export const calculateMaxSpeed = (first: number, second: number, third: number):
         return null
     })
 
-    // @ts-ignore
-    const maxSpeed: number = parseFloat(totalLightSpeed / 3).toFixed(2) * (3 - fulllyDamagedRockets)
+    let maximumSpeedWidthDamage: number = Number(parseFloat(`${totalLightSpeed / 3}`).toFixed(2))
+
+    const totalOfFullyDamagedRockets: number = 3 - fulllyDamagedRockets
+
+    const maxSpeed: number = maximumSpeedWidthDamage * totalOfFullyDamagedRockets
     const maxDamagedRocket = getMaxNumFromArray(availableRockets)
     const maxPercentage: number = getMaxPercentage(maxSpeed, maxDamagedRocket)
     return maxPercentage

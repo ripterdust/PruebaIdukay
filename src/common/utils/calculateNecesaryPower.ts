@@ -23,7 +23,6 @@ export const calcNecesaryPower = (rockets: Rockets, missingPower: number) => {
     const functionalRockets: string[] = []
 
     Object.keys(rockets).map((key) => {
-        // @ts-ignore
         const rocket = rockets[key]
         if (rocket > 0) {
             functionalRockets.push(key)
@@ -38,9 +37,7 @@ export const calcNecesaryPower = (rockets: Rockets, missingPower: number) => {
     if (rocketsAvailable === 0 || powerRequiredByRockett > 99) return noCompile
 
     functionalRockets.map((rocket) => {
-        // @ts-ignore
         const powerAvailable = rockets[rocket]
-        // @ts-ignore
         power[rocket] = powerAvailable + powerRequiredByRockett
     })
 

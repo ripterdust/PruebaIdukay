@@ -1,5 +1,5 @@
 export interface Rockets {
-    first: number
+    [first: string]: number
     second: number
     third: number
 }

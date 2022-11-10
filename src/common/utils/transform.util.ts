@@ -33,7 +33,6 @@ export const getDataFromResponse = (response: string): Rockets | string => {
             const numberOfkey: string = `${index + 1}`
 
             const key = indexes[numberOfkey]
-            // @ts-ignore
             rockets[key] = parseInt(number)
         })
     return rockets

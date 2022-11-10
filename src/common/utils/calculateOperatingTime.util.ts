@@ -24,7 +24,6 @@ export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSp
     let overpowerRockets = 0
 
     Object.keys(damage).map((key) => {
-        // @ts-ignore
         const capacity = TOTALPOWER - damage[key]
         // @ts-ignore
         const extaPower = fuel[key] - capacity
