@@ -9,7 +9,9 @@ export const transformResponse = (firstRocket: number, secondRocket: number, thi
 }
 
 export const getDataFromResponse = (response: string): Rockets | string => {
-    if (response == noCompile) return response
+    if (response == noCompile) {
+        return response
+    }
 
     const indexes: StringObject = {
         1: 'first',

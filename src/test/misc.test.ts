@@ -3,12 +3,13 @@ import { getMaxNumFromArray, getMaxPercentage } from '../common/utils/get.util'
 import { getDataFromResponse } from '../common/utils/transform.util'
 
 describe('THis tests show the returning of data', () => {
+    const rocketsFuel = {
+        first: 90,
+        second: 100,
+        third: 110,
+    }
     test('Returns the mgs', () => {
-        expect(getDataFromResponse('A: 90 mg/s, B: 100 mg/s, C: 110 mg/s')).toStrictEqual({
-            first: 90,
-            second: 100,
-            third: 110,
-        })
+        expect(getDataFromResponse('A: 90 mg/s, B: 100 mg/s, C: 110 mg/s')).toStrictEqual(rocketsFuel)
     })
 
     test('No compile', () => {

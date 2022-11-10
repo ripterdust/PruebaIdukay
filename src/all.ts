@@ -12,6 +12,6 @@ const useCases: AllCases[] = [
     { first: 20, second: 50, third: 40, cSpeed: 170 },
 ]
 
-useCases.map((rocketState: AllCases) => {
-    results(rocketState.first, rocketState.second, rocketState.third, rocketState.cSpeed)
+useCases.map(({ first, second, third, cSpeed }: AllCases) => {
+    results(first, second, third, cSpeed)
 })

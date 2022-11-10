@@ -34,7 +34,9 @@ export const calcNecesaryPower = (rockets: Rockets, missingPower: number) => {
 
     const powerRequiredByRockett = missingPower / rocketsAvailable
 
-    if (rocketsAvailable === 0 || powerRequiredByRockett > 99) return noCompile
+    if (rocketsAvailable === 0 || powerRequiredByRockett > 99) {
+        return noCompile
+    }
 
     functionalRockets.map((rocket) => {
         const powerAvailable = rockets[rocket]
