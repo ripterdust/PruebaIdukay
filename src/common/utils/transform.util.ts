@@ -1,5 +1,6 @@
 import { fuelRepsonse, noCompile } from '../misc/responses.response'
 import { Rockets } from '../interfaces/rocket.interface'
+import { StringObject } from '../interfaces/general.interface'
 export const transformResponse = (firstRocket: number, secondRocket: number, thirdRocket: number) => {
     return fuelRepsonse
         .replace('__aRocket__', `${firstRocket}`)
@@ -9,7 +10,8 @@ export const transformResponse = (firstRocket: number, secondRocket: number, thi
 
 export const getDataFromResponse = (response: string): Rockets | string => {
     if (response == noCompile) return response
-    const indexes = {
+
+    const indexes: StringObject = {
         1: 'first',
         2: 'second',
         3: 'third',
@@ -28,11 +30,11 @@ export const getDataFromResponse = (response: string): Rockets | string => {
         .replace('C:', '')
         .split(',')
         .map((number: string, index: number) => {
-            // @ts-ignore
-            const key = indexes[index + 1]
+            const numberOfkey: string = `${index + 1}`
+
+            const key = indexes[numberOfkey]
             // @ts-ignore
             rockets[key] = parseInt(number)
         })
-    console.log(response)
     return rockets
 }
