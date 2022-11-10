@@ -1,10 +1,11 @@
 import { fuelRepsonse, noCompile } from '../misc/responses.response'
 import { Rockets } from '../interfaces/rocket.interface'
-export const transformResponse = (firstRocket: number, secondRocket: number, thirdRocket: number) =>
-    fuelRepsonse
+export const transformResponse = (firstRocket: number, secondRocket: number, thirdRocket: number) => {
+    return fuelRepsonse
         .replace('__aRocket__', `${firstRocket}`)
         .replace('__bRocket__', `${secondRocket}`)
         .replace('__cRocket__', `${thirdRocket}`)
+}
 
 export const getDataFromResponse = (response: string): Rockets | string => {
     if (response == noCompile) return response
@@ -20,9 +21,8 @@ export const getDataFromResponse = (response: string): Rockets | string => {
         third: 0,
     }
     response
-        // @ts-ignore
-        .replaceAll('mg/s', '')
-        .replaceAll(' ', '')
+        .replace(/mg\/s/g, '')
+        .replace(/ /g, '')
         .replace('A:', '')
         .replace('B:', '')
         .replace('C:', '')
@@ -33,5 +33,6 @@ export const getDataFromResponse = (response: string): Rockets | string => {
             // @ts-ignore
             rockets[key] = parseInt(number)
         })
+    console.log(response)
     return rockets
 }
