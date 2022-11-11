@@ -15,9 +15,11 @@ export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSp
         return 0
     }
 
+    const LigthSpeed = 100
+
     if (damage.first === 0 && damage.second === 0 && damage.third === 0) {
-        if (cSpeed <= 100) return Infinity
-        const extraSpeed = cSpeed - 100
+        if (cSpeed <= LigthSpeed) return Infinity
+        const extraSpeed = cSpeed - LigthSpeed
         return extraSpeed
     }
 
