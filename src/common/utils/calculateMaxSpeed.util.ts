@@ -14,10 +14,12 @@ import { getMaxNumFromArray, getMaxPercentage } from './get.util'
 
 export const calculateMaxSpeed = (first: number, second: number, third: number): number => {
     const totalLightSpeed: number = 100
+    const minimumCapacity = 0
+    if (first === minimumCapacity && second === minimumCapacity && third === minimumCapacity) {
+        return totalLightSpeed
+    }
 
-    if (first === 0 && second === 0 && third === 0) return totalLightSpeed
-
-    if (first < 100 && second < 100 && third < 100) {
+    if (first < totalLightSpeed && second < totalLightSpeed && third < totalLightSpeed) {
         const mostDamagedRocket: number = Math.max(first, second, third)
         return totalLightSpeed - mostDamagedRocket
     }
@@ -42,8 +44,8 @@ export const calculateMaxSpeed = (first: number, second: number, third: number):
     })
 
     let maximumSpeedWidthDamage: number = Number(parseFloat(`${totalLightSpeed / 3}`).toFixed(2))
-
-    const totalOfFullyDamagedRockets: number = 3 - fulllyDamagedRockets
+    const totalRockets = 3
+    const totalOfFullyDamagedRockets: number = totalRockets - fulllyDamagedRockets
 
     const maxSpeed: number = maximumSpeedWidthDamage * totalOfFullyDamagedRockets
     const maxDamagedRocket = getMaxNumFromArray(availableRockets)

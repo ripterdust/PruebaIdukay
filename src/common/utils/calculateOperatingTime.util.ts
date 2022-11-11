@@ -32,7 +32,9 @@ export const calculateOperatingTime: CalculateOperatingTime = (damage, fuel, cSp
 
         const extaPower = fuel[key] - capacity
 
-        if (extaPower > 0) {
+        const noPower = 0
+
+        if (extaPower > noPower) {
             average += extaPower
             overpowerRockets += 1
         }
